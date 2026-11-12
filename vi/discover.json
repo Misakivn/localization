@@ -23,6 +23,6 @@
   "download.option.recommended/description": "Dựa trên phần cứng của bạn, tùy chọn này được đề xuất.",
   "download.option.downloaded/title": "Đã tải xuống",
   "download.option.downloading/title": "Đang tải xuống ({{progressPercentile}}%)",
-
+  "failedToStartDownload": "Không thể bắt đầu tải xuống",
   "feed.action.refresh": "Làm mới nguồn cấp dữ liệu"
 }

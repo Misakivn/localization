@@ -3,12 +3,10 @@
   "filterModels.placeholder": "Lọc mô hình...",
   "aggregate_one": "Bạn có {{count}} mô hình cục bộ, chiếm {{size}} dung lượng ổ cứng.",
   "aggregate_other": "Bạn có {{count}} mô hình cục bộ, chiếm {{size}} dung lượng ổ cứng.",
-
   "noModels.title": "Các mô hình cục bộ của bạn sẽ hiển thị ở đây.",
   "noModels.discoverButtonText.prefix": "Nhấn vào nút",
   "noModels.discoverButtonText.suffix": "trên thanh bên trái để khám phá các LLM thú vị để tải xuống.",
   "noModels.discoverModelsPrompt": "Hãy đi và khám phá một số LLM cục bộ!",
-
   "modelsTable.arch/label": "Kiến Trúc",
   "modelsTable.params/label": "Tham Số",
   "modelsTable.publisher/label": "Nhà Phát Hành",
@@ -17,32 +15,19 @@
   "modelsTable.size/label": "Kích Thước",
   "modelsTable.dateModified/label": "Ngày Sửa Đổi",
   "modelsTable.actions/label": "Hành Động",
-
   "modelsTable.quant/label": "Lượng Tử Hóa",
   "modelsTable.llms/label": "LLM",
   "modelsTable.embeddingModels/label": "Mô Hình Nhúng",
-
   "action.model.delete": "Xóa",
   "action.model.delete.full": "Xóa mô hình",
   "action.model.delete.confirmation/title": "Xóa {{name}}",
   "action.model.delete.confirmation/description": "Bạn có chắc chắn không? Điều này sẽ xóa vĩnh viễn tất cả các tệp liên quan đến mô hình này khỏi máy của bạn. Hành động này không thể hoàn tác.",
   "action.model.delete.confirmation/confirm": "Xóa",
-  
-  "action.createVirtual": "Tạo Cài Đặt",
-  "action.createVirtual.details/title": "Tạo Cài Đặt",
-  "action.createVirtual.details/create": "Tạo",
-  "action.createVirtual.details/cancel": "Hủy",
-  "action.createVirtual.details.base/label": "Mô Hình Cơ Sở",
-  "action.createVirtual.details.name/label": "Tên",
-  "action.createVirtual.details.includeMachineDependent/label": "Bao Gồm Cấu Hình Phụ Thuộc Máy",
-  "action.createVirtual.details.includeMachineDependent/hint": "Cho biết có bao gồm các cấu hình phụ thuộc vào máy (như cài đặt GPU) trong cài đặt. Không khuyến nghị cho việc chia sẻ.",
-  "action.createVirtual.details.config/label": "Ghi Đè Cấu Hình",
-  "action.createVirtual.details.config.empty": "Không có ghi đè cấu hình",
-  "action.createVirtual.details/error": "Không thể tạo mô hình ảo.",
-
+  "action.model.delete/error": "Không thể xóa mô hình",
   "loader.model.bundled": "Đã đóng gói",
   "action.cancel": "Hủy",
   "indexingOngoing": "Đang lập chỉ mục các mô hình... Điều này có thể mất vài giây",
+  "indexingPageLoaderText": "Đang lập chỉ mục mô hình...",
   "index/error_one": "Không thể lập chỉ mục thư mục sau:",
   "index/error_other": "Không thể lập chỉ mục các thư mục sau:",
   "badModels/title_one": "Không thể lập chỉ mục mô hình sau:",
@@ -53,12 +38,18 @@
   "unresolvedVirtualModels/title_other": "Không thể giải quyết các mô hình ảo sau:",
   "unresolvedVirtualModels.missingModel": "Thiếu một mô hình phụ thuộc: {{missing}}. Đường dẫn phụ thuộc:\n{{chain}}",
   "unresolvedVirtualModels.circular": "Phát hiện phụ thuộc vòng tròn.",
-
+  "unresolvedVirtualModels.fix": "Sửa",
+  "unresolvedVirtualModels.revealInExplorer": "Hiển thị trong Explorer",
+  "unresolvedVirtualModels.revealInFinder": "Hiển thị trong Finder",
+  "unresolvedVirtualModels.reveal/error": "Không thể hiển thị",
   "modelsDirectory": "Thư mục mô hình",
   "modelsDirectory.change": "Thay đổi...",
+  "modelsDirectory.change/error": "Không thể đổi thư mục mô hình",
   "modelsDirectory.reset": "Đặt lại về đường dẫn mặc định",
   "modelsDirectory.reveal.mac": "Hiển thị trong Finder",
   "modelsDirectory.reveal.nonMac": "Mở trong File Explorer",
+  "modelsDirectory.reveal.mac/error": "Không thể mở trong Finder",
+  "modelsDirectory.reveal.nonMac/error": "Không thể mở trong File Explorer",
   "modelsDirectory.forceReindex": "Làm mới",
   "loadState/loaded": "Đã tải",
   "loadState/loading": "Đang tải",
@@ -74,20 +65,59 @@
   "contextMenu/copyModelDefaultIdentifier": "Sao Chép Mã Định Danh Mặc Định",
   "contextMenu/showRawMetadata": "Hiển Thị Dữ Liệu Thô",
   "contextMenu/openOnHuggingFace": "Mở Trên Hugging Face",
+  "contextMenu": {
+    "showOnWeb": "Xem trên Web",
+    "pullLatest": {
+      "label": "Lấy Bản mới nhất",
+      "checking": "Đang kiểm tra cập nhật...",
+      "upToDate": "Đã là bản mới nhất",
+      "error": "Không thể kiểm tra cập nhật"
+    }
+  },
   "tooltip/moreActions": "Thêm Hành Động",
   "tooltip/getInfo": "Nhận Thông Tin",
   "tooltip/editModelDefaultConfig": "Chỉnh sửa cấu hình mặc định của mô hình",
   "tooltip/editModelDefaultConfig/override": "Chỉnh sửa cấu hình mặc định của mô hình (* có ghi đè)",
   "tooltip/visionBadge": "Mô hình này có thể xử lý đầu vào hình ảnh",
   "tooltip/toolUseBadge": "Mô hình này đã được huấn luyện để sử dụng công cụ",
-
   "visionBadge/label": "Đã Bật Thị Giác",
   "toolUseBadge/label": "Được Huấn Luyện Để Sử Dụng Công Cụ",
-
   "loader.action.load": "Tải mô hình",
   "loader.action.clearChanges": "Xóa các thay đổi",
   "loader.action.cancel": "Hủy",
   "loader.info.clickOnModelToLoad": "Nhấp vào một mô hình để tải nó",
   "loader.info.configureLoadParameters": "Cấu hình các tham số tải mô hình",
-  "loader.info.activeGeneratorWarning": "Bạn đang sử dụng một plugin có trình tạo tùy chỉnh. Mô hình hiện được tải của bạn có thể được áp dụng hoặc không được áp dụng dưới plugin này, tùy thuộc vào cách triển khai của trình tạo"
+  "loader.info.activeGeneratorWarning": "Bạn đang sử dụng một plugin có trình tạo tùy chỉnh. Mô hình hiện được tải của bạn có thể được áp dụng hoặc không được áp dụng dưới plugin này, tùy thuộc vào cách triển khai của trình tạo",
+  "loader.guardrails.estimatedMemoryUsage": "Bộ nhớ Ước tính",
+  "loader.guardrails.total": "Tổng",
+  "loader.guardrails.gpu": "GPU",
+  "loader.guardrails.unavailable": "Không có ước tính bộ nhớ cho mô hình này",
+  "loader.guardrails.notEnoughResources": "Không đủ tài nguyên để tải mô hình với cài đặt hiện tại",
+  "loader.guardrails.notEnoughResources/options": "Tùy chọn",
+  "loader.guardrails.notEnoughResources.moreInfoSection.appearsNotEnoughMemory": "Có vẻ hệ thống của bạn không đủ bộ nhớ để tải mô hình này.",
+  "loader.guardrails.notEnoughResources.moreInfoSection.ifYouBelieveThisIsIncorrect": "Bạn có thể điều chỉnh giới hạn an toàn khi tải mô hình trong cài đặt, hoặc giữ <altOptionKey /> để vẫn tải.",
+  "loader.guardrails.notEnoughResources.moreInfoSection.warning": "Tải mô hình quá lớn có thể làm quá tải hệ thống và khiến máy bị treo.",
+  "loader.guardrails.notEnoughResources.alwaysAllowLoadAnyway": "(Không khuyến nghị) Luôn cho phép 'Vẫn tải' mà không cần giữ Alt/Option",
+  "virtual": {
+    "local": {
+      "create": "Tạo Mô hình Ảo",
+      "title": "Tạo Mô hình Ảo Cục bộ",
+      "description": "Tạo mô hình ảo bằng cách gói một mô hình với một bộ cấu hình. Trọng số gốc sẽ không bị sao chép.",
+      "modelKey.label": "Khóa Mô hình",
+      "modelKey.placeholder": "Nhập khóa mô hình duy nhất",
+      "modelKey.normalized": "Khóa mô hình của bạn sẽ được chuẩn hóa thành: {{normalized}}",
+      "baseModel.label": "Mô hình Gốc",
+      "baseModel.placeholder": "Chọn mô hình gốc",
+      "baseModel.empty": "Tải xuống một mô hình để dùng làm mô hình gốc",
+      "next": "Tiếp",
+      "confirm": "Tạo",
+      "error": "Không thể tạo mô hình ảo"
+    },
+    "altsSelect": {
+      "title": "Đổi nguồn mô hình",
+      "resetButton": "Đặt lại mặc định",
+      "description": "Mô hình này có nhiều tệp nguồn khả dụng.",
+      "trigger": "Biến thể"
+    }
+  }
 }

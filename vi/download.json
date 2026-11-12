@@ -1,8 +1,16 @@
 {
   "postDownloadActionExecutor.zipExtraction/status": "Đang giải nén...",
+  "postDownloadActionExecutor.tarGzExtraction/status": "Đang giải nén tệp...",
+  "postDownloadActionExecutor.runtimeIndexerTarGzExtraction/status": "Đang giải nén tệp...",
+  "postDownloadActionExecutor.modifyModelData/status": "Đang cập nhật dữ liệu mô hình...",
+  "postDownloadActionExecutor.notification/status": "Đang thông báo cho người dùng...",
+  "postDownloadActionExecutor.writeString/status": "Đang ghi siêu dữ liệu...",
+  "postDownloadActionExecutor.updateSelectedBackendVersions/status": "Đang cập nhật phiên bản đã chọn...",
+  "postDownloadActionExecutor.extensionPackAutoDeletion/status": "Đang xóa các tiện ích mở rộng không dùng...",
+  "postDownloadActionExecutor.pluginInstall/status": "Đang cài đặt plugin...",
+  "postDownloadActionExecutor.pluginUninstall/status": "Đang gỡ cài đặt plugin...",
   "finalizing": "Đang hoàn tất tải xuống... (quá trình này có thể mất vài phút)",
   "noOptions": "Không có tùy chọn tương thích nào để tải xuống",
-
   "deeplink/confirmation/title": "Tải mô hình từ Hugging Face 🤗",
   "deeplink/confirmation/subtitle": "{{modelName}}",
   "deeplink/confirmation/selectRecommended": "Chọn từ đề xuất",
@@ -16,8 +24,17 @@
   "deeplink/error/modelNotFound/title": "Ruh roh, chúng tôi không thể tim thấy mô hình này",
   "deeplink/error/modelNotFound/body": "Kiểm tra lại tên mô hình và cân nhắc thử tuỳ chọn tải xuống khác.",
   "deeplink/actions/trySearching": "Hãy thử tìm kiếm {{modelName}} trên Hugging Face",
-
   "downloadsPanel/title": "Tải Xuống",
   "downloadsPanel/sectionTitle/ongoing": "Đang Diễn Ra",
-  "downloadsPanel/sectionTitle/completed": "Đã Hoàn Thành"
+  "downloadsPanel/sectionTitle/completed": "Đã Hoàn Thành",
+  "downloadsPanel": {
+    "reveal": {
+      "mac": "Hiển thị trong Finder",
+      "mac/error": "Không thể hiển thị trong Finder",
+      "nonMac": "Hiển thị trong File Explorer",
+      "nonMac/error": "Không thể hiển thị trong File Explorer"
+    },
+    "completed": "Đã tải xong",
+    "loadModel": "Tải Mô hình"
+  }
 }

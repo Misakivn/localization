@@ -31,12 +31,18 @@
     "sampling/title": "Lấy Mẫu",
     "settings/title": "Cài Đặt",
     "toolUse/title": "Sử Dụng Công Cụ",
-    "promptTemplate/title": "Mẫu Lời Nhắc"
+    "promptTemplate/title": "Mẫu Lời Nhắc",
+    "customFields/title": "Trường Tùy Chỉnh"
   },
-
   "llm.prediction.systemPrompt/title": "Prompt Hệ Thống",
   "llm.prediction.systemPrompt/description": "Sử dụng trường này để cung cấp các hướng dẫn nền tảng cho mô hình, chẳng hạn như một tập hợp quy tắc, ràng buộc hoặc yêu cầu chung. Trường này cũng thường được gọi là \"prompt hệ thống\".",
   "llm.prediction.systemPrompt/subTitle": "Hướng dẫn cho AI",
+  "llm.prediction.systemPrompt/openEditor": "Trình soạn thảo",
+  "llm.prediction.systemPrompt/closeEditor": "Đóng trình soạn thảo",
+  "llm.prediction.systemPrompt/openedEditor": "Đã mở trong trình soạn thảo...",
+  "llm.prediction.systemPrompt/edit": "Chỉnh sửa Prompt Hệ Thống...",
+  "llm.prediction.systemPrompt/addInstructionsWithMore": "Thêm hướng dẫn...",
+  "llm.prediction.systemPrompt/addInstructions": "Thêm hướng dẫn",
   "llm.prediction.temperature/title": "Nhiệt độ",
   "llm.prediction.temperature/subTitle": "Mức độ ngẫu nhiên đưa vào. 0 sẽ cho kết quả giống nhau mỗi lần, trong khi giá trị cao hơn sẽ tăng tính sáng tạo và sự đa dạng",
   "llm.prediction.temperature/info": "Từ tài liệu llama.cpp: \"Giá trị mặc định là <{{dynamicValue}}>, cung cấp sự cân bằng giữa ngẫu nhiên và xác định. Ở mức cực đoan, nhiệt độ 0 sẽ luôn chọn token có khả năng xảy ra cao nhất tiếp theo, dẫn đến các kết quả giống hệt nhau trong mỗi lần chạy\"",
@@ -52,6 +58,8 @@
   "llm.prediction.maxPredictedTokens/info": "Kiểm soát độ dài tối đa của phản hồi chatbot. Bật để đặt giới hạn cho độ dài tối đa của phản hồi, hoặc tắt để chatbot tự quyết định khi nào dừng lại.",
   "llm.prediction.maxPredictedTokens/inputLabel": "Độ dài phản hồi tối đa (token)",
   "llm.prediction.maxPredictedTokens/wordEstimate": "Khoảng {{maxWords}} từ",
+  "llm.prediction.reasoning.budgetTokens/title": "Ngân sách Suy luận",
+  "llm.prediction.reasoning.budgetTokens/subTitle": "Số token dành cho suy nghĩ: tắt để không giới hạn, 0 để kết thúc ngay, N > 0 để giới hạn số token",
   "llm.prediction.repeatPenalty/title": "Phạt Lặp lại",
   "llm.prediction.repeatPenalty/subTitle": "Mức độ hạn chế lặp lại cùng một token",
   "llm.prediction.repeatPenalty/info": "Từ tài liệu llama.cpp: \"Giúp ngăn mô hình tạo ra văn bản lặp lại hoặc đơn điệu.\n\nGiá trị cao hơn (ví dụ, 1.5) sẽ phạt các lặp lại mạnh mẽ hơn, trong khi giá trị thấp hơn (ví dụ, 0.9) sẽ dễ dãi hơn.\" • Giá trị mặc định là <{{dynamicValue}}>",
@@ -99,6 +107,8 @@
   "llm.prediction.tools/serverPageDescriptionAddon": "Truyền cái này qua phần thân yêu cầu dưới dạng `tools` khi sử dụng API máy chủ",
   "llm.prediction.promptTemplate/title": "Mẫu Prompt",
   "llm.prediction.promptTemplate/subTitle": "Định dạng tin nhắn trong cuộc trò chuyện được gửi đến mô hình. Việc thay đổi điều này có thể gây ra hành vi không mong muốn - hãy đảm bảo bạn biết mình đang làm gì!",
+  "llm.load.promptTemplate/title": "Mẫu Trò chuyện",
+  "llm.load.promptTemplate/subTitle": "Mẫu mà engine dùng để định dạng trò chuyện, công cụ, suy luận và dữ liệu đa phương thức. Thay đổi mục này cần tải lại mô hình.",
   "llm.prediction.speculativeDecoding.numDraftTokensExact/title": "Số Lượng Token Nháp Cần Tạo",
   "llm.prediction.speculativeDecoding.numDraftTokensExact/subTitle": "Số lượng token sẽ tạo bằng mô hình nháp cho mỗi token của mô hình chính. Tìm điểm tối ưu giữa tính toán và phần thưởng",
   "llm.prediction.speculativeDecoding.minContinueDraftingProbability/title": "Ngưỡng Xác Suất Nháp Tiếp Tục",
@@ -110,7 +120,27 @@
   "llm.prediction.speculativeDecoding.draftModel/title": "Mô Hình Nháp",
   "llm.prediction.reasoning.parsing/title": "Phân Tích Phần Lý Luận",
   "llm.prediction.reasoning.parsing/subTitle": "Cách phân tích các phần lý luận trong đầu ra của mô hình",
-
+  "llm.load.mainGpu/title": "GPU Chính",
+  "llm.load.mainGpu/subTitle": "GPU được ưu tiên cho việc tính toán mô hình",
+  "llm.load.mainGpu/placeholder": "Chọn GPU chính...",
+  "llm.load.splitStrategy/title": "Chiến lược Phân chia",
+  "llm.load.splitStrategy/subTitle": "Cách phân chia việc tính toán mô hình giữa các GPU",
+  "llm.load.splitStrategy/placeholder": "Chọn chiến lược phân chia...",
+  "llm.load.offloadKVCacheToGpu/title": "Giảm tải KV Cache sang Bộ nhớ GPU",
+  "llm.load.offloadKVCacheToGpu/subTitle": "Đưa KV cache vào bộ nhớ GPU. Tăng hiệu suất nhưng cần nhiều bộ nhớ GPU hơn",
+  "llm.load.numParallelSessions/title": "Số Dự đoán Đồng thời Tối đa",
+  "llm.load.numParallelSessions/subTitle": "Số dự đoán tối đa mà mô hình có thể chạy cùng lúc. Tốc độ của từng dự đoán có thể giảm khi chạy đồng thời, nhưng mỗi dự đoán sẽ bắt đầu nhanh hơn và tổng thông lượng có thể cao hơn",
+  "llm.load.useUnifiedKvCache/title": "KV Cache Hợp nhất",
+  "llm.load.useUnifiedKvCache/subTitle": "Quyết định các dự đoán đồng thời có dùng chung một KV cache hay không, giúp tiết kiệm bộ nhớ. Tắt mục này để mỗi dự đoán dùng được toàn bộ độ dài ngữ cảnh, nhưng tốn nhiều bộ nhớ hơn",
+  "llm.load.llama.contextCheckpoints/title": "Điểm Lưu Ngữ cảnh",
+  "llm.load.llama.contextCheckpoints/subTitle": "Số điểm lưu ngữ cảnh tối đa giữ lại cho mỗi slot. Giá trị thấp hơn giúp giảm RAM cho các mô hình SWA/recurrent. 0 để tắt điểm lưu.",
+  "llm.load.llama.reasoningBudgetMessage/title": "Thông điệp Hết Ngân sách Suy luận",
+  "llm.load.llama.reasoningBudgetMessage/subTitle": "Thông điệp được chèn trước thẻ kết thúc suy nghĩ khi đã dùng hết ngân sách suy luận (mặc định: không có)",
+  "load.gpuStrictVramCap/title": "Giới hạn Giảm tải Mô hình trong Bộ nhớ GPU Chuyên dụng",
+  "load.gpuStrictVramCap.customSubTitleOff": "TẮT: Cho phép trọng số mô hình tràn sang bộ nhớ dùng chung khi bộ nhớ GPU chuyên dụng đã đầy",
+  "load.gpuStrictVramCap.customSubTitleOn": "BẬT: Hệ thống chỉ giảm tải trọng số mô hình vào bộ nhớ GPU chuyên dụng và RAM. Ngữ cảnh vẫn có thể dùng bộ nhớ dùng chung",
+  "load.gpuStrictVramCap.customGpuOffloadWarning": "Giảm tải mô hình bị giới hạn trong bộ nhớ GPU chuyên dụng. Số lớp thực tế được giảm tải có thể khác",
+  "load.allGpusDisabledWarning": "Tất cả GPU hiện đang bị tắt. Hãy bật ít nhất một GPU để giảm tải",
   "llm.load.contextLength/title": "Độ dài Ngữ cảnh",
   "llm.load.contextLength/subTitle": "Số lượng token tối đa mà mô hình có thể xử lý trong một lời nhắc. Xem các tùy chọn Tràn Cuộc Trò Chuyện trong \"Tham số Suy Luận\" để biết thêm cách quản lý điều này",
   "llm.load.contextLength/info": "Chỉ định số lượng tối đa token mà mô hình có thể xem xét một lúc, ảnh hưởng đến mức độ ngữ cảnh mà nó giữ lại trong quá trình xử lý",
@@ -118,16 +148,26 @@
   "llm.load.seed/title": "Seed",
   "llm.load.seed/subTitle": "Hạt giống cho bộ tạo số ngẫu nhiên được sử dụng trong tạo văn bản. -1 là ngẫu nhiên",
   "llm.load.seed/info": "Seed ngẫu nhiên: Đặt giá trị seed để tạo số ngẫu nhiên nhằm đảm bảo kết quả có thể lặp lại",
-
+  "llm.load.numCpuExpertLayersRatio/title": "Số lớp buộc đặt trọng số MoE lên CPU",
+  "llm.load.numCpuExpertLayersRatio/subTitle": "Số lớp có expert bị buộc chạy trên CPU. Tiết kiệm VRAM và có thể nhanh hơn giảm tải GPU một phần. Không khuyến nghị nếu mô hình vừa hoàn toàn trong VRAM.",
+  "llm.load.numCpuExpertLayersRatio/info": "Chỉ định số lớp có expert bị buộc chạy trên CPU. Các lớp attention vẫn ở trên GPU, giúp tiết kiệm VRAM mà suy luận vẫn khá nhanh.",
+  "llm.load.llama.autoFit/title": "Tự động Tối ưu theo Phần cứng",
+  "llm.load.llama.autoFit/subTitle": "Để llama.cpp tự chọn độ dài ngữ cảnh và cách đặt lên GPU khi tải, dựa trên bộ nhớ còn trống",
   "llm.load.llama.evalBatchSize/title": "Kích thước Lô Đánh giá",
   "llm.load.llama.evalBatchSize/subTitle": "Số lượng token đầu vào được xử lý cùng một lúc. Tăng giá trị này sẽ cải thiện hiệu suất nhưng tốn bộ nhớ hơn",
-  "llm.load.llama.evalBatchSize/info": "Đặt số lượng ví dụ được xử lý cùng lúc trong một lô trong quá trình đánh giá, ảnh hưởng đến tốc độ và sử dụng bộ nhớ",
+  "llm.load.llama.physicalBatchSize/subTitle": "Số token prompt tối đa xử lý trong một lần. Giá trị lớn hơn có thể tăng hiệu suất nhưng tốn nhiều bộ nhớ hơn",
   "llm.load.llama.ropeFrequencyBase/title": "Cơ sở Tần suất RoPE",
   "llm.load.llama.ropeFrequencyBase/subTitle": "Tần số cơ sở tùy chỉnh cho nhúng vị trí quay (RoPE). Tăng giá trị này có thể cho phép hiệu suất tốt hơn ở các độ dài ngữ cảnh cao",
   "llm.load.llama.ropeFrequencyBase/info": "[Nâng cao] Điều chỉnh tần số cơ bản cho Mã hóa Vị trí Quay, ảnh hưởng đến cách thông tin vị trí được nhúng",
   "llm.load.llama.ropeFrequencyScale/title": "Thang đo Tần suất RoPE",
   "llm.load.llama.ropeFrequencyScale/subTitle": "Độ dài ngữ cảnh được chia tỷ lệ theo hệ số này để mở rộng ngữ cảnh hiệu quả bằng cách sử dụng RoPE",
   "llm.load.llama.ropeFrequencyScale/info": "[Nâng cao] Điều chỉnh thang đo tần số cho Mã hóa Vị trí Quay để kiểm soát độ chi tiết mã hóa vị trí",
+  "llm.load.mlx.autoFit/title": "Tự động Chọn Độ dài Ngữ cảnh",
+  "llm.load.mlx.autoFit/subTitle": "Để runtime MLX tự chọn độ dài ngữ cảnh an toàn khi tải, dựa trên bộ nhớ còn trống",
+  "llm.load.yuzu.autoFit/title": "Tự động Chọn Độ dài Ngữ cảnh",
+  "llm.load.yuzu.autoFit/subTitle": "Để runtime tự chọn độ dài ngữ cảnh an toàn khi tải, dựa trên bộ nhớ còn trống",
+  "llm.load.mlx.diskCache/title": "Bộ nhớ đệm Prompt trên Đĩa",
+  "llm.load.mlx.diskCache/subTitle": "Tái sử dụng trạng thái prompt giữa các yêu cầu bằng cách lưu đệm trên đĩa",
   "llm.load.llama.acceleration.offloadRatio/title": "Chuyển Tải GPU",
   "llm.load.llama.acceleration.offloadRatio/subTitle": "Số lượng lớp mô hình rời rạc để tính toán trên GPU để tăng tốc GPU",
   "llm.load.llama.acceleration.offloadRatio/info": "Đặt số lượng lớp sẽ chuyển tải sang GPU.",
@@ -177,7 +217,6 @@
   "llm.load.mlx.kvCacheQuantization/groupSize/tooltip": "Nâng cao: Cấu hình 'kích thước nhóm matmul' đã lượng tử hóa\n\n• Độ chính xác = kích thước nhóm 32\n• Cân bằng = kích thước nhóm 64\n• Nhanh = kích thước nhóm 128\n",
   "llm.load.mlx.kvCacheQuantization/quantizedStart/title": "Bắt đầu lượng tử hóa khi ctx đạt đến độ dài này",
   "llm.load.mlx.kvCacheQuantization/quantizedStart/tooltip": "Khi ngữ cảnh đạt đến số lượng token này,\nbắt đầu lượng tử hóa bộ đệm KV",
-
   "embedding.load.contextLength/title": "Độ dài Ngữ cảnh",
   "embedding.load.contextLength/subTitle": "Số lượng token tối đa mà mô hình có thể xử lý trong một lời nhắc. Xem các tùy chọn Tràn Cuộc Trò Chuyện trong \"Tham số Suy Luận\" để biết thêm cách quản lý điều này",
   "embedding.load.contextLength/info": "Chỉ định số lượng tối đa token mà mô hình có thể xem xét một lúc, ảnh hưởng đến mức độ ngữ cảnh mà nó giữ lại trong quá trình xử lý",
@@ -201,9 +240,7 @@
   "embedding.load.llama.tryMmap/info": "Tải tệp mô hình trực tiếp từ đĩa vào bộ nhớ",
   "embedding.load.seed/title": "Seed",
   "embedding.load.seed/subTitle": "Hạt giống cho bộ tạo số ngẫu nhiên được sử dụng trong tạo văn bản. -1 là hạt giống ngẫu nhiên",
-
   "embedding.load.seed/info": "Seed ngẫu nhiên: Đặt giá trị seed để tạo số ngẫu nhiên để đảm bảo kết quả có thể lặp lại",
-
   "presetTooltip": {
     "included/title": "Giá Trị Đặt Trước",
     "included/description": "Các trường sau sẽ được áp dụng",
@@ -219,9 +256,11 @@
     "legacy/description": "Cài đặt trước này là một cài đặt trước cũ. Nó bao gồm các trường sau hiện đã được xử lý tự động hoặc không còn áp dụng.",
     "button/publish": "Xuất Bản Lên Hub",
     "button/pushUpdate": "Đẩy Thay Đổi Lên Hub",
-    "button/export": "Xuất"
+    "button/noChangesToPush": "Không có thay đổi để đẩy lên",
+    "button/export": "Xuất",
+    "hubLabel": "Cấu hình sẵn từ Hub của {{user}}",
+    "ownHubLabel": "Cấu hình sẵn của bạn từ Hub"
   },
-
   "customInputs": {
     "string": {
       "emptyParagraph": "<Trống>"
@@ -281,9 +320,9 @@
       "max": "TỐI ĐA",
       "off": "TẮT"
     },
-    "llamaAccelerationSplitStrategy": {
-      "evenly": "Đều",
-      "favorMainGpu": "Ưu Tiên GPU Chính"
+    "gpuSplitStrategy": {
+      "evenly": "Chia đều",
+      "favorMainGpu": "Ưu tiên GPU Chính"
     },
     "speculativeDecodingDraftModel": {
       "readMore": "Đọc cách hoạt động",
@@ -345,24 +384,23 @@
   "idleTTL.label": "Tự Động Dỡ Tải Nếu Rảnh (TTL)",
   "idleTTL.hint": "Nếu được đặt, mô hình sẽ tự động được dỡ tải sau khi không hoạt động trong khoảng thời gian đã chỉ định.",
   "idleTTL.mins": "phút",
-
   "presets": {
     "title": "Cài Đặt Trước",
-    "commitChanges": "Lưu Thay Đổi",
-    "commitChanges/description": "Lưu các thay đổi của bạn vào cài đặt trước.",
-    "commitChanges.manual": "Đã phát hiện trường mới. Bạn sẽ có thể chọn những thay đổi nào sẽ đưa vào cài đặt trước.",
-    "commitChanges.manual.hold.0": "Giữ",
-    "commitChanges.manual.hold.1": "để chọn những thay đổi nào sẽ lưu vào cài đặt trước.",
-    "commitChanges.saveAll.hold.0": "Giữ",
-    "commitChanges.saveAll.hold.1": "để lưu tất cả thay đổi.",
-    "commitChanges.saveInPreset.hold.0": "Giữ",
-    "commitChanges.saveInPreset.hold.1": "để chỉ lưu các thay đổi vào các trường đã có trong cài đặt trước.",
-    "commitChanges/error": "Không thể lưu thay đổi vào cài đặt trước.",
-    "commitChanges.manual/description": "Chọn những thay đổi nào sẽ đưa vào cài đặt trước.",
+    "saveChanges": "Lưu",
+    "saveChanges/description": "Lưu thay đổi vào cấu hình sẵn.",
+    "saveChanges.manual": "Phát hiện trường mới. Bạn có thể chọn những thay đổi nào sẽ đưa vào cấu hình sẵn.",
+    "saveChanges.manual.hold.0": "Giữ",
+    "saveChanges.manual.hold.1": "để chọn những thay đổi sẽ lưu vào cấu hình sẵn.",
+    "saveChanges.saveAll.hold.0": "Giữ",
+    "saveChanges.saveAll.hold.1": "để lưu tất cả thay đổi.",
+    "saveChanges.saveInPreset.hold.0": "Giữ",
+    "saveChanges.saveInPreset.hold.1": "để chỉ lưu thay đổi ở các trường đã có trong cấu hình sẵn.",
+    "saveChanges/error": "Không thể lưu thay đổi vào cấu hình sẵn.",
+    "saveChanges.manual/description": "Chọn những thay đổi sẽ đưa vào cấu hình sẵn.",
     "saveAs": "Lưu Thành Mới...",
     "presetNamePlaceholder": "Nhập tên cho cài đặt trước...",
     "cannotCommitChangesLegacy": "Đây là cài đặt trước cũ và không thể sửa đổi. Bạn có thể tạo bản sao bằng cách sử dụng \"Lưu Thành Mới...\".",
-    "cannotCommitChangesNoChanges": "Không có thay đổi nào để lưu.",
+    "cannotSaveChangesNoChanges": "Không có thay đổi để lưu.",
     "emptyNoUnsaved": "Chọn một cài đặt trước...",
     "emptyWithUnsaved": "Cài Đặt Trước Chưa Lưu",
     "saveEmptyWithUnsaved": "Lưu Cài Đặt Trước Thành...",
@@ -378,10 +416,12 @@
     "discardChanges/info": "Hủy bỏ tất cả các thay đổi chưa được cam kết và khôi phục cài đặt trước về trạng thái ban đầu",
     "newEmptyPreset": "+ Cài Đặt Trước Mới",
     "importPreset": "Nhập",
+    "contextMenuCopyIdentifier": "Sao chép Mã định danh Cấu hình sẵn",
     "contextMenuSelect": "Áp Dụng Cài Đặt Trước",
     "contextMenuDelete": "Xóa...",
     "contextMenuShare": "Xuất Bản...",
     "contextMenuOpenInHub": "Xem trên Hub",
+    "contextMenuPullFromHub": "Lấy Bản mới nhất",
     "contextMenuPushChanges": "Đẩy thay đổi lên Hub",
     "contextMenuPushingChanges": "Đang đẩy...",
     "contextMenuPushedChanges": "Đã đẩy thay đổi",
@@ -405,7 +445,11 @@
       "pushedToHub": "Cài đặt trước của bạn đã được đẩy lên Hub",
       "descriptionPlaceholder": "Nhập mô tả...",
       "willBePublic": "Việc xuất bản cài đặt trước của bạn sẽ khiến nó trở thành công khai",
+      "willBePrivate": "Chỉ bạn mới thấy được cấu hình sẵn này",
+      "willBeOrgVisible": "Mọi người trong tổ chức sẽ thấy được cấu hình sẵn này.",
       "publicSubtitle": "Cài đặt trước của bạn là <custom-bold>Công khai</custom-bold>. Những người khác có thể tải xuống và phân nhánh nó trên lmstudio.ai",
+      "privateUsageReached": "Đã đạt giới hạn số cấu hình sẵn riêng tư.",
+      "continueInBrowser": "Tiếp tục trong Trình duyệt",
       "confirmShareButton": "Xuất Bản",
       "error": "Không thể xuất bản cài đặt trước",
       "createFreeAccount": "Tạo tài khoản miễn phí trong Hub để xuất bản cài đặt trước"
@@ -421,6 +465,44 @@
       "createFreeAccount": "Tạo tài khoản miễn phí trong Hub để xuất bản cài đặt trước",
       "error": "Không thể đẩy cập nhật",
       "confirmUpdateButton": "Đẩy"
+    },
+    "resolve": {
+      "title": "Giải quyết xung đột...",
+      "tooltip": "Mở hộp thoại để giải quyết khác biệt với phiên bản trên Hub"
+    },
+    "loginToManage": {
+      "title": "Đăng nhập để quản lý..."
+    },
+    "downloadFromHub": {
+      "title": "Tải xuống",
+      "downloading": "Đang tải xuống...",
+      "success": "Đã tải xuống!",
+      "error": "Tải xuống thất bại"
+    },
+    "push": {
+      "title": "Đẩy thay đổi",
+      "pushing": "Đang đẩy lên...",
+      "success": "Đã đẩy lên",
+      "tooltip": "Đẩy thay đổi cục bộ lên phiên bản lưu trên Hub",
+      "error": "Đẩy lên thất bại"
+    },
+    "saveAsNewModal": {
+      "title": "Ối! Không tìm thấy cấu hình sẵn trên Hub",
+      "confirmSaveAsNewDescription": "Bạn có muốn xuất bản cấu hình sẵn này thành một cấu hình mới không?",
+      "confirmButton": "Xuất bản thành Mới"
+    },
+    "pull": {
+      "title": "Lấy Bản mới nhất",
+      "error": "Lấy về thất bại",
+      "contextMenuErrorMessage": "Lấy về thất bại",
+      "success": "Đã lấy về",
+      "pulling": "Đang lấy về...",
+      "upToDate": "Đã là bản mới nhất!",
+      "unsavedChangesModal": {
+        "title": "Bạn có thay đổi chưa lưu.",
+        "bodyContent": "Lấy về từ máy chủ sẽ ghi đè các thay đổi chưa lưu của bạn. Tiếp tục?",
+        "confirmButton": "Ghi đè Thay đổi Chưa lưu"
+      }
     },
     "import": {
       "title": "Nhập Cài Đặt Trước Từ Tệp",
@@ -479,33 +561,64 @@
       "speculativeDecoding": "Bao gồm trong Cài Đặt Trước"
     }
   },
-
   "flashAttentionWarning": "Tăng Tốc Chú Ý là một tính năng thử nghiệm có thể gây ra sự cố với một số mô hình. Nếu bạn gặp sự cố, hãy thử tắt nó đi.",
   "llamaKvCacheQuantizationWarning": "Lượng Tử Hóa Bộ Đệm KV là một tính năng thử nghiệm có thể gây ra sự cố với một số mô hình. Tăng Tốc Chú Ý phải được bật để lượng tử hóa bộ đệm V. Nếu bạn gặp sự cố, hãy đặt lại về mặc định \"F16\".",
-
   "seedUncheckedHint": "Hạt Giống Ngẫu Nhiên",
+  "reasoningBudgetUncheckedHint": "Không giới hạn",
   "ropeFrequencyBaseUncheckedHint": "Tự động",
   "ropeFrequencyScaleUncheckedHint": "Tự động",
-
   "hardware": {
-    "advancedGpuSettings": "Cài Đặt GPU Nâng Cao",
-    "advancedGpuSettings.info": "Nếu bạn không chắc chắn, hãy để chúng ở giá trị mặc định",
-    "advancedGpuSettings.reset": "Đặt lại về mặc định",
-    "environmentVariables": {
-      "title": "Biến Môi Trường",
-      "description": "Các biến môi trường hoạt động trong suốt thời gian tồn tại của mô hình.",
-      "key.placeholder": "Chọn biến...",
-      "value.placeholder": "Giá trị"
+    "environmentVariables": "Biến Môi trường",
+    "environmentVariables.info": "Nếu không chắc chắn, hãy giữ giá trị mặc định",
+    "environmentVariables.reset": "Đặt lại mặc định",
+    "gpus.information": "Cấu hình các GPU được phát hiện trên máy của bạn",
+    "gpuSettings": {
+      "editMaxCapacity": "Sửa Dung lượng Tối đa",
+      "hideEditMaxCapacity": "Ẩn Sửa Dung lượng Tối đa",
+      "allOffWarning": "Tất cả GPU đang tắt hoặc bị vô hiệu hóa. Hãy cấp phát ít nhất một phần GPU để có thể tải mô hình",
+      "split": {
+        "title": "Chiến lược",
+        "placeholder": "Chọn cách cấp phát bộ nhớ GPU",
+        "options": {
+          "generalDescription": "Cấu hình cách tải mô hình lên các GPU",
+          "evenly": {
+            "title": "Chia đều",
+            "description": "Cấp phát bộ nhớ đều giữa các GPU"
+          },
+          "priorityOrder": {
+            "title": "Thứ tự ưu tiên",
+            "description": "Kéo để sắp xếp lại thứ tự ưu tiên. Hệ thống sẽ cố cấp phát nhiều hơn cho các GPU ở đầu danh sách"
+          },
+          "custom": {
+            "title": "Tùy chỉnh",
+            "description": "Cấp phát bộ nhớ",
+            "maxAllocation": "Cấp phát Tối đa"
+          }
+        }
+      },
+      "deviceId.info": "Mã định danh duy nhất của thiết bị này",
+      "changesOnlyAffectNewlyLoadedModels": "Thay đổi chỉ áp dụng cho các mô hình được tải sau đó",
+      "toggleGpu": "Bật/Tắt GPU"
+    }
+  },
+  "load.gpuSplitConfig/title": "Cấu hình Phân chia GPU",
+  "envVars/title": "Đặt Biến Môi trường",
+  "envVars": {
+    "select": {
+      "placeholder": "Chọn một biến môi trường...",
+      "noOptions": "Không còn biến nào",
+      "filter": {
+        "placeholder": "Lọc kết quả tìm kiếm",
+        "resultsFound_zero": "Không tìm thấy kết quả",
+        "resultsFound_one": "Tìm thấy 1 kết quả",
+        "resultsFound_other": "Tìm thấy {{count}} kết quả"
+      }
     },
-    "mainGpu": {
-      "title": "GPU Chính",
-      "description": "GPU được ưu tiên cho việc tính toán mô hình.",
-      "placeholder": "Chọn GPU chính..."
+    "inputValue": {
+      "placeholder": "Nhập giá trị"
     },
-    "splitStrategy": {
-      "title": "Chiến Lược Chia Tách",
-      "description": "Cách chia tách tính toán mô hình trên các GPU.",
-      "placeholder": "Chọn chiến lược chia tách..."
+    "values": {
+      "title": "Giá trị Hiện tại"
     }
   }
 }

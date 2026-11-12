@@ -1,6 +1,5 @@
 {
   "copyLmStudioLinkButton/toolTip": "Sao Chép Liên Kết Tải Xuống Mô Hình",
-
   "filter.noMatches": "Không có kết quả trùng khớp",
   "longRunningTask": {
     "unbundlingDependencies": {
@@ -31,8 +30,241 @@
     "retry": "Thử Lại"
   },
   "artifacts": {
-    "fetchError": "Không thể tìm nạp hiện vật"
+    "fetchError": "Không thể tìm nạp hiện vật",
+    "organizationVisible": "Hiển thị trong Tổ chức"
   },
   "incompatible": "Không Tương Thích",
-  "compatible": "Tương Thích"
+  "compatible": "Tương Thích",
+  "public": "Công khai",
+  "private": "Riêng tư",
+  "yes": "Có",
+  "no": "Không",
+  "go": "Đi",
+  "proceedWithEllipsis": "Tiếp tục...",
+  "proceed": "Tiếp tục",
+  "inProgress": "Đang thực hiện...",
+  "failed": "Thất bại",
+  "pending": "Đang chờ",
+  "doneWithExclamation": "Xong!",
+  "done": "Xong",
+  "beta": "Beta",
+  "complete": {
+    "completeWithEllipsis": "Hoàn tất...",
+    "complete": "Hoàn tất",
+    "completingWithEllipsis": "Đang hoàn tất...",
+    "completing": "Đang hoàn tất",
+    "completedWithExclamation": "Đã hoàn tất!",
+    "completed": "Đã hoàn tất"
+  },
+  "cancel": {
+    "cancelWithEllipsis": "Hủy...",
+    "cancel": "Hủy",
+    "cancelingWithEllipsis": "Đang hủy...",
+    "canceling": "Đang hủy",
+    "canceled": "Đã hủy"
+  },
+  "next": {
+    "nextWithEllipsis": "Tiếp...",
+    "next": "Tiếp"
+  },
+  "back": {
+    "backWithEllipsis": "Quay lại...",
+    "back": "Quay lại"
+  },
+  "close": {
+    "closeWithEllipsis": "Đóng...",
+    "close": "Đóng",
+    "closingWithEllipsis": "Đang đóng...",
+    "closing": "Đang đóng",
+    "closedWithExclamation": "Đã đóng!",
+    "closed": "Đã đóng"
+  },
+  "delete": {
+    "deleteWithEllipsis": "Xóa...",
+    "delete": "Xóa",
+    "deletingWithEllipsis": "Đang xóa...",
+    "deleting": "Đang xóa",
+    "deletedWithExclamation": "Đã xóa!",
+    "deleted": "Đã xóa"
+  },
+  "retry": {
+    "retryWithEllipsis": "Thử lại...",
+    "retry": "Thử lại",
+    "retryingWithEllipsis": "Đang thử lại...",
+    "retrying": "Đang thử lại"
+  },
+  "refresh": {
+    "refreshWithEllipsis": "Làm mới...",
+    "refresh": "Làm mới",
+    "refreshingWithEllipsis": "Đang làm mới...",
+    "refreshing": "Đang làm mới",
+    "refreshedWithExclamation": "Đã làm mới!",
+    "refreshed": "Đã làm mới"
+  },
+  "confirm": {
+    "confirm": "Xác nhận",
+    "confirmingWithEllipsis": "Đang xác nhận...",
+    "confirming": "Đang xác nhận",
+    "confirmedWithExclamation": "Đã xác nhận!",
+    "confirmed": "Đã xác nhận"
+  },
+  "copy": {
+    "copyWithEllipsis": "Sao chép...",
+    "copy": "Sao chép",
+    "copyingWithEllipsis": "Đang sao chép...",
+    "copying": "Đang sao chép",
+    "copiedWithExclamation": "Đã sao chép!",
+    "copied": "Đã sao chép"
+  },
+  "edit": {
+    "editWithEllipsis": "Chỉnh sửa...",
+    "edit": "Chỉnh sửa",
+    "editingWithEllipsis": "Đang chỉnh sửa...",
+    "editing": "Đang chỉnh sửa",
+    "editedWithExclamation": "Đã chỉnh sửa!",
+    "edited": "Đã chỉnh sửa"
+  },
+  "load": {
+    "loadWithEllipsis": "Tải...",
+    "load": "Tải",
+    "loadingWithEllipsis": "Đang tải...",
+    "loading": "Đang tải",
+    "loadedWithExclamation": "Đã tải!",
+    "loaded": "Đã tải"
+  },
+  "save": {
+    "saveWithEllipsis": "Lưu...",
+    "save": "Lưu",
+    "savingWithEllipsis": "Đang lưu...",
+    "saving": "Đang lưu",
+    "savedWithExclamation": "Đã lưu!",
+    "saved": "Đã lưu"
+  },
+  "saveAs": {
+    "saveAsWithEllipsis": "Lưu thành...",
+    "saveAs": "Lưu thành"
+  },
+  "saveAsNew": {
+    "saveAsNewWithEllipsis": "Lưu thành mới...",
+    "saveAsNew": "Lưu thành mới"
+  },
+  "search": {
+    "searchWithEllipsis": "Tìm kiếm...",
+    "search": "Tìm kiếm",
+    "searchingWithEllipsis": "Đang tìm kiếm...",
+    "searching": "Đang tìm kiếm"
+  },
+  "update": {
+    "updateWithEllipsis": "Cập nhật...",
+    "update": "Cập nhật",
+    "updatingWithEllipsis": "Đang cập nhật...",
+    "updating": "Đang cập nhật",
+    "updatedWithExclamation": "Đã cập nhật!",
+    "updated": "Đã cập nhật"
+  },
+  "create": {
+    "createWithEllipsis": "Tạo...",
+    "create": "Tạo",
+    "creatingWithEllipsis": "Đang tạo...",
+    "creating": "Đang tạo",
+    "createdWithExclamation": "Đã tạo!",
+    "created": "Đã tạo"
+  },
+  "reset": {
+    "resetWithEllipsis": "Đặt lại...",
+    "reset": "Đặt lại",
+    "resettingWithEllipsis": "Đang đặt lại...",
+    "resetting": "Đang đặt lại"
+  },
+  "pause": {
+    "pause": "Tạm dừng",
+    "pausingWithEllipsis": "Đang tạm dừng...",
+    "pausing": "Đang tạm dừng",
+    "paused": "Đã tạm dừng"
+  },
+  "download": {
+    "download": "Tải xuống",
+    "downloadingWithEllipsis": "Đang tải xuống...",
+    "downloading": "Đang tải xuống",
+    "downloadedWithExclamation": "Đã tải xuống!",
+    "downloaded": "Đã tải xuống"
+  },
+  "upload": {
+    "uploadWithEllipsis": "Tải lên...",
+    "upload": "Tải lên",
+    "uploadingWithEllipsis": "Đang tải lên...",
+    "uploading": "Đang tải lên",
+    "uploadedWithExclamation": "Đã tải lên!",
+    "uploaded": "Đã tải lên"
+  },
+  "remove": {
+    "removeWithEllipsis": "Gỡ bỏ...",
+    "remove": "Gỡ bỏ",
+    "removingWithEllipsis": "Đang gỡ bỏ...",
+    "removing": "Đang gỡ bỏ",
+    "removedWithExclamation": "Đã gỡ bỏ!",
+    "removed": "Đã gỡ bỏ"
+  },
+  "uninstall": {
+    "uninstallWithEllipsis": "Gỡ cài đặt...",
+    "uninstall": "Gỡ cài đặt",
+    "uninstallingWithEllipsis": "Đang gỡ cài đặt...",
+    "uninstalling": "Đang gỡ cài đặt",
+    "uninstalledWithExclamation": "Đã gỡ cài đặt!",
+    "uninstalled": "Đã gỡ cài đặt"
+  },
+  "resume": {
+    "resumeWithEllipsis": "Tiếp tục...",
+    "resume": "Tiếp tục",
+    "resumingWithEllipsis": "Đang tiếp tục...",
+    "resuming": "Đang tiếp tục"
+  },
+  "start": {
+    "startWithEllipsis": "Bắt đầu...",
+    "start": "Bắt đầu",
+    "startingWithEllipsis": "Đang bắt đầu...",
+    "starting": "Đang bắt đầu",
+    "started": "Đã bắt đầu"
+  },
+  "stop": {
+    "stopWithEllipsis": "Dừng...",
+    "stop": "Dừng",
+    "stoppingWithEllipsis": "Đang dừng...",
+    "stopping": "Đang dừng",
+    "stoppedWithExclamation": "Đã dừng!",
+    "stopped": "Đã dừng"
+  },
+  "import": {
+    "importWithEllipsis": "Nhập...",
+    "import": "Nhập",
+    "importingWithEllipsis": "Đang nhập...",
+    "importing": "Đang nhập",
+    "importedWithExclamation": "Đã nhập!",
+    "imported": "Đã nhập"
+  },
+  "letsGo": {
+    "letsGo": "Bắt đầu thôi",
+    "letsGoWithEllipsis": "Bắt đầu thôi...",
+    "letsGoWithExclamation": "Bắt đầu thôi!"
+  },
+  "run": {
+    "runWithEllipsis": "Chạy...",
+    "run": "Chạy",
+    "runningWithEllipsis": "Đang chạy...",
+    "running": "Đang chạy"
+  },
+  "configure": {
+    "configureWithEllipsis": "Cấu hình...",
+    "configure": "Cấu hình",
+    "configuringWithEllipsis": "Đang cấu hình...",
+    "configured": "Đã cấu hình"
+  },
+  "publish": {
+    "publishWithEllipsis": "Xuất bản...",
+    "publish": "Xuất bản",
+    "publishingWithEllipsis": "Đang xuất bản...",
+    "publishing": "Đang xuất bản",
+    "publishedWithExclamation": "Đã xuất bản!",
+    "published": "Đã xuất bản"
+  }
 }

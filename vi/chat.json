@@ -23,12 +23,10 @@
   "noChatSelectedPlaceholder": "Chọn một cuộc trò chuyện",
   "unnamedChat": "Cuộc trò chuyện chưa đặt tên",
   "emptyFolder": "Thư mục trống",
-
   "tokenCount": "Số lượng Token",
- "messageTokenCount": "Số lượng Token đầu vào",
- "tokenCount/hint": "Số lượng token trong tin nhắn. Được đếm bằng bộ mã hóa của mô hình hiện được chọn.\n\nYêu cầu mô hình phải được tải.",
- "messageTokenCount/hint": "Số lượng token trong tin nhắn. Được đếm bằng bộ mã hóa của mô hình hiện được chọn.\n\n**Không** bao gồm ước tính số token trong tệp đính kèm.",
-
+  "messageTokenCount": "Số lượng Token đầu vào",
+  "tokenCount/hint": "Số lượng token trong tin nhắn. Được đếm bằng bộ mã hóa của mô hình hiện được chọn.\n\nYêu cầu mô hình phải được tải.",
+  "messageTokenCount/hint": "Số lượng token trong tin nhắn. Được đếm bằng bộ mã hóa của mô hình hiện được chọn.\n\n**Không** bao gồm ước tính số token trong tệp đính kèm.",
   "notes": "Ghi chú cuộc trò chuyện",
   "notes/add/first": "Thêm ghi chú",
   "notes/add/another": "Thêm ghi chú khác",
@@ -37,10 +35,10 @@
   "notes/delete": "Xóa ghi chú",
   "notes/noteLabel": "Ghi chú",
   "notes/copyContent": "Sao chép Nội dung ghi chú",
-
   "actions/sendMessage/error": "Gửi tin nhắn không thành công",
   "actions/loadModel/error": "🥲 Tải mô hình không thành công",
   "actions/addFile": "[Thử nghiệm] Đính kèm tập tin vào tin nhắn này\n(.pdf, plaintext, hoặc .docx)",
+  "actions/addFile/label": "Đính kèm tệp",
   "actions/changeRole": "Chuyển đổi giữa vai trò Người dùng và Trợ lý.\n\nĐiều này hữu ích để điều hướng cuộc trò chuyện theo hướng cụ thể.\n\nCó thể được sử dụng cho các kịch bản 'học với ít ví dụ' hoặc 'học từ ngữ cảnh'",
   "actions/addImage": "Thêm hình ảnh",
   "actions/deleteMessage": "Xóa tin nhắn",
@@ -59,6 +57,8 @@
   "actions/loadLastModel": "Tải lại mô hình đã sử dụng gần nhất",
   "actions/loadLastModel/tooltip": "Nhấp để tải mô hình đã sử dụng gần nhất với cuộc trò chuyện này:\n\n{{lastModel}}",
   "actions/loadLastModel/error": "Tải lại mô hình đã sử dụng gần nhất không thành công.",
+  "actions/clearLastUsedModel": "Xóa mô hình dùng gần nhất",
+  "actions/clearLastUsedModel/error": "Không thể xóa mô hình dùng gần nhất.",
   "actions/continueCurrentModel": "Sử dụng mô hình hiện tại",
   "actions/continueCurrentModel/tooltip": "Mô hình hiện tại: {{currentModel}}",
   "actions/changeToLastUsedModel": "Tải {{lastModel}}",
@@ -88,9 +88,11 @@
   "actions/createChatAtRoot/error": "Tạo cuộc trò chuyện mới không thành công",
   "actions/createFolderAtRoot": "Tạo thư mục mới",
   "actions/createFolderAtRoot/error": "Tạo thư mục mới không thành công",
+  "actions/createFolder/error": "Không thể tạo thư mục",
+  "actions/openInFolder/mac": "Hiển thị trong Finder",
+  "actions/openInFolder/pc": "Hiển thị trong File Explorer",
   "actions/createChat/error": "Tạo cuộc trò chuyện không thành công",
   "actions/deleteChat/errorTitle": "Xóa cuộc trò chuyện không thành công",
-
   "userFile/fileSizeLimit": "Giới hạn kích thước tệp là ",
   "userFile/noImageSupport": "Mô hình không hỗ trợ đầu vào hình ảnh",
   "userFile/errorPrefix": "Lỗi - ",
@@ -105,40 +107,32 @@
   "errorTitle": "Lỗi",
   "userFile/chatTerminalDocumentsCount_one": "{{count}} tài liệu trong cuộc trò chuyện",
   "userFile/chatTerminalDocumentsCount_other": "{{count}} tài liệu trong cuộc trò chuyện",
-
   "prediction/busyModel/title": "Mô hình đang bận",
   "prediction/busyModel/message": "Vui lòng đợi mô hình hoàn tất và thử lại",
   "prediction/noModel/title": "Chưa chọn mô hình",
   "prediction/modelLoading": "Tin nhắn đã xếp hàng, sẽ được gửi khi mô hình tải xong",
   "prediction/noModel/message": "Chọn một mô hình để gửi tin nhắn",
   "prediction/unloadModel/error": "Không thể dỡ mô hình",
-
   "retrieval/user/processingLabel": "AI đang suy nghĩ...",
   "retrieval/powerUser/intermediateStepsHidden": "Các bước trung gian đã bị ẩn. Nhấp để mở rộng.",
   "retrieval/actions/clickToExpand": "Nhấp để mở rộng các bước trung gian",
   "retrieval/actions/clickToCollapse": "Nhấp để thu gọn các bước trung gian",
-
   "style": "Hiển thị trò chuyện",
-
   "style/viewMode/markdown": "Markdown",
   "style/viewMode/plaintext": "Văn bản thuần",
   "style/viewMode/monospace": "Monospace",
-
   "speculativeDecodingVisualization/toggle": "Hiển Thị Token Nháp Đã Chấp Nhận",
   "speculativeDecodingVisualization/fromDraftModel_one": "Token nháp đã chấp nhận",
   "speculativeDecodingVisualization/fromDraftModel_other": "Các token nháp đã chấp nhận",
   "speculativeDecodingVisualization/cannotChangeViewMode": "Chế độ xem bị tắt khi hiển thị token nháp.",
-
   "style/fontSize/label": "Kích thước chữ",
   "style/fontSize/medium": "Mặc định",
   "style/fontSize/large": "Lớn",
   "style/fontSize/small": "Nhỏ",
-
   "style/debugBlocks/label": "Hiển Thị Khối Thông Tin Gỡ Lỗi",
-
   "style/thinkingUI/label": "Mở rộng khối lý luận theo mặc định",
   "style/chatFullWidth/label": "Mở rộng vùng chứa trò chuyện theo chiều rộng cửa sổ",
-
+  "style/chatUtilityMenusShowLabel/label": "Hiển thị nhãn của menu tiện ích trò chuyện",
   "messageBlocks": {
     "expandBlockTooltip": "Mở rộng nội dung",
     "collapseBlockTooltip": "Thu gọn nội dung",
@@ -147,18 +141,17 @@
       "collapseTooltip": "Thu gọn khối thông tin gỡ lỗi",
       "expandTooltip": "Mở rộng khối thông tin gỡ lỗi"
     }
- },
-
+  },
+  "chatTabOptions/clearAllMessages": "Xóa tất cả tin nhắn...",
+  "chatTabOptions/duplicateChat": "Nhân bản cuộc trò chuyện",
   "topBarActions/duplicateChat": "Sao Chép",
   "topBarActions/clearChat": "Xóa Tất Cả",
   "topBarActions/clearChatConfirmation": "Bạn có chắc chắn muốn xóa tất cả tin nhắn trong cuộc trò chuyện này không?",
   "topBarActions/clearChatCancel": "Hủy",
   "topBarActions/clearChatDelete": "Xóa Tất Cả",
-
   "noModels.indexing": "Đang lập chỉ mục tệp mô hình... (việc này có thể mất một lúc)",
   "noModels.downloading": "Đang tải LLM đầu tiên của bạn...",
   "noModels": "Chưa có LLM nào! Tải xuống một cái để bắt đầu!",
-
   "plugins": {
     "pluginTrigger": {
       "noPlugins": "Plugin",
@@ -182,7 +175,10 @@
         "placeholder": "Các plugin bạn tạo sẽ xuất hiện ở đây"
       },
       "startRunningDevelopmentPlugin/error": "Không thể bắt đầu chạy plugin ở chế độ phát triển",
-      "stopRunningDevelopmentPlugin/error": "Không thể dừng chạy plugin ở chế độ phát triển"
+      "stopRunningDevelopmentPlugin/error": "Không thể dừng chạy plugin ở chế độ phát triển",
+      "forceReInitPlugin/error": "Không thể khởi động lại plugin",
+      "signOutMcpPlugin/error": "Không thể đăng xuất khỏi plugin",
+      "cancelMcpAuthentication/error": "Không thể hủy xác thực plugin"
     },
     "pluginConfiguration": {
       "title": "Cấu Hình Plugin",
@@ -206,9 +202,12 @@
         "revealInFinder": "Hiển thị trong Finder",
         "openInFileExplorer": "Mở trong Trình khám phá tệp"
       }
-    }
- },
-
+    },
+    "localFork": {
+      "error": "Không thể tạo bản sao phát triển cục bộ của plugin."
+    },
+    "restartErrorPlugin/error": "Không thể khởi động lại plugin"
+  },
   "genInfo": {
     "tokensPerSecond": "{{tokensPerSecond}} tok/giây",
     "predictedTokensCount": "{{predictedTokensCount}} token",
@@ -223,6 +222,11 @@
     "stopReason.maxPredictedTokensReached": "Đã Đạt Số Token Dự Đoán Tối Đa",
     "stopReason.contextLengthReached": "Đã Đạt Giới Hạn Độ Dài Ngữ Cảnh",
     "speculativeDecodedBy": "Mô hình nháp: {{decodedBy}}",
-    "speculativeDecodingStats": "Đã chấp nhận {{accepted}}/{{total}} token nháp ({{percentage}}%)"
- }
+    "speculativeDecodingStats": "Đã chấp nhận {{accepted}}/{{total}} token nháp ({{percentage}}%)",
+    "speculativeDecodingAcceptedPercentage": "{{percentage}}% token nháp được chấp nhận",
+    "speculativeDecodingTooltip": "Đã chấp nhận {{accepted}}/{{total}} token nháp"
+  },
+  "tabs": {
+    "systemPromptEditorTab.headerLabel": "Đang chỉnh sửa Prompt Hệ Thống"
+  }
 }
